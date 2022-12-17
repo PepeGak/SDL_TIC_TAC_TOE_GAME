@@ -1,4 +1,4 @@
-﻿#include "CScreen_Stone.h"
+﻿#include "CScreen_Stone.hpp"
 
 CScreen_Stone::CScreen_Stone(const char* filePath, int r, int g, int b)
 {

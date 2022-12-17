@@ -1,4 +1,4 @@
-﻿#include "CWindow_Icon.h"
+﻿#include "CWindow_Icon.hpp"
 
 CWindow_Icon::CWindow_Icon(SDL_Window* window)
 {
@@ -8,7 +8,7 @@ CWindow_Icon::CWindow_Icon(SDL_Window* window)
 
 bool CWindow_Icon::Load()
 {
-    this->icon = IMG_Load("Assets/icon.png");
+    this->icon = IMG_Load("./Tic-Tac-Toe/Assets/icon.png");
     if (this->icon == nullptr)
         return false;
     SDL_SetWindowIcon(this->window, this->icon);

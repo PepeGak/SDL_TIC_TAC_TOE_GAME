@@ -1,4 +1,4 @@
-﻿#include "CApp.h"
+﻿#include "CApp.hpp"
 
 bool CApp::onInit()
 {
@@ -19,11 +19,11 @@ bool CApp::onInit()
     this->screen->getWindowSurface(this->type1[0]->window);
     
 
-    this->background1 = new CScreen_Background("Assets/Background.bmp", this->screen->screen);
+    this->background1 = new CScreen_Background("./Tic-Tac-Toe/Assets/Background.bmp", this->screen->screen);
     if (this->background1 == nullptr)
         return false;
     
-    this->background2 = new CScreen_Background("Assets/Background3.bmp", this->screen->screen);
+    this->background2 = new CScreen_Background("./Tic-Tac-Toe/Assets/Background3.bmp", this->screen->screen);
     if (this->background2 == nullptr)
         return false;
 
@@ -33,11 +33,11 @@ bool CApp::onInit()
     if (!this->type1[1]->Load())
         return false;
 
-    this->stone_x = new CScreen_Stone(this->screen->screen, "Assets/Stone1.bmp", 30, 129, 192);
+    this->stone_x = new CScreen_Stone(this->screen->screen, "./Tic-Tac-Toe/Assets/Stone1.bmp", 30, 129, 192);
     if (this->stone_x == nullptr)
         return false;
 
-    this->stone_o = new CScreen_Stone(this->screen->screen, "Assets/Stone2.bmp", 30, 129, 192);
+    this->stone_o = new CScreen_Stone(this->screen->screen, "./Tic-Tac-Toe/Assets/Stone2.bmp", 30, 129, 192);
     if (this->stone_o == nullptr)
         return false;
 

@@ -1,4 +1,4 @@
-﻿#include "CScreen.h"
+﻿#include "CScreen.hpp"
 
 CScreen::CScreen()
 {
@@ -7,7 +7,8 @@ CScreen::CScreen()
 
 CScreen::~CScreen()
 {
-    SDL_FreeSurface(this->screen);
+    if (this->screen != nullptr)
+        SDL_FreeSurface(this->screen);
     this->screen = nullptr;
 };
 

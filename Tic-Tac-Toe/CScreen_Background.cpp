@@ -1,4 +1,4 @@
-﻿#include "CScreen_Background.h"
+﻿#include "CScreen_Background.hpp"
 
 CScreen_Background::CScreen_Background(const char* filePath)
 {

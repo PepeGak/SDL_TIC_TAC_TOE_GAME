@@ -1,4 +1,4 @@
-#include "CSurface.h"
+#include "CSurface.hpp"
 
 CSurface::CSurface()
 {

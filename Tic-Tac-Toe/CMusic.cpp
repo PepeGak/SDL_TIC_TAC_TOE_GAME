@@ -1,4 +1,4 @@
-﻿#include "CMusic.h"
+﻿#include "CMusic.hpp"
 
 CMusic::CMusic()
 {
@@ -10,10 +10,10 @@ CMusic::CMusic()
 
 bool CMusic::LoadMedia()
 {
-    this->mus_draw = Mix_LoadWAV("Assets/Draw.wav");
-    this->mus_lose = Mix_LoadWAV("Assets/Lose.wav");
-    this->mus_place = Mix_LoadWAV("Assets/Place.wav");
-    this->mus_win = Mix_LoadWAV("Assets/Win.wav");
+    this->mus_draw = Mix_LoadWAV("./Tic-Tac-Toe/Assets/Draw.wav");
+    this->mus_lose = Mix_LoadWAV("./Tic-Tac-Toe/Assets/Lose.wav");
+    this->mus_place = Mix_LoadWAV("./Tic-Tac-Toe/Assets/Place.wav");
+    this->mus_win = Mix_LoadWAV("./Tic-Tac-Toe/Assets/Win.wav");
 
     if (this->mus_draw == nullptr ||
         this->mus_lose == nullptr ||

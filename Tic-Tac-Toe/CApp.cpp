@@ -1,4 +1,4 @@
-﻿#include "CApp.h"
+﻿#include "CApp.hpp"
 #pragma warning (disable : 4996)
 
 CApp::CApp()
@@ -56,7 +56,7 @@ void CApp::Menu()
 void CApp::LoadInFile()
 {
     std::ofstream fout;
-    fout.open("Assets/Records.txt", std::ofstream::trunc | std::ofstream::out);
+    fout.open("./Tic-Tac-Toe/Assets/Records.txt", std::ofstream::trunc | std::ofstream::out);
 
     for (int i = 0; i < 10 && i < this->info.size(); i++)
     {
@@ -84,11 +84,11 @@ void CApp::LoadInFile()
 void CApp::LoadFromFile()
 {
     std::ifstream fin;
-    fin.open("Assets/Records.txt");
+    fin.open("./Tic-Tac-Toe/Records.txt");
     
     fin.seekg(0, std::ios::ios_base::end);
-
-    std::ios_base::streampos size = fin.tellg();
+    
+    auto size = fin.tellg();
     if (size < 7)
         return;
 

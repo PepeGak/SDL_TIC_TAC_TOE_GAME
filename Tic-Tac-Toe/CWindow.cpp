@@ -1,4 +1,4 @@
-﻿#include "CWindow.h"
+﻿#include "CWindow.hpp"
 
 CWindow::CWindow()
 {

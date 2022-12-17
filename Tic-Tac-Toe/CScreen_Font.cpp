@@ -1,9 +1,9 @@
-﻿#include "CScreen_Font.h"
+﻿#include "CScreen_Font.hpp"
 
 CScreen_Font::CScreen_Font(int size, SDL_Surface* screenDest)
 {
     this->font = nullptr;
-    this->font = TTF_OpenFont("Assets/CyrilicOld.ttf", size);
+    this->font = TTF_OpenFont("./Tic-Tac-Toe/Assets/CyrilicOld.ttf", size);
     this->screen = screenDest;
 };
 

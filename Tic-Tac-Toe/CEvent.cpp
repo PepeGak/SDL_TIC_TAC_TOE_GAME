@@ -1,4 +1,4 @@
-﻿#include "CEvent.h"
+﻿#include "CEvent.hpp"
 
 CEvent::CEvent()
 {
@@ -67,7 +67,7 @@ void CEvent::onExit() //Используется
 	
 };
 
-void CEvent::onKeyDown(SDL_Keycode sym, Uint16 mod, Uint16 scancode) //Используется
+void CEvent::onKeyDown(SDL_Keycode sym, Uint16 mod, SDL_Scancode scancode) //Используется
 {
 	switch (sym)
 	{
