@@ -8,11 +8,11 @@ void CApp::onQuit()
     delete this->mus;
     this->mus = nullptr;
 
-    delete this->type1[1];
-    this->type1[1] = nullptr;
-
     delete this->screen;
     this->screen = nullptr;
+
+    delete this->type1[1];
+    this->type1[1] = nullptr;
     
     delete this->background1;
     this->background1 = nullptr;
