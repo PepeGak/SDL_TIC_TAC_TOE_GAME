@@ -11,6 +11,9 @@ void CApp::onQuit()
     delete this->screen;
     this->screen = nullptr;
 
+    delete this->type1[0];
+    this->type1[0] = nullptr;
+
     delete this->type1[1];
     this->type1[1] = nullptr;
     
